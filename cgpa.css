@@ -126,38 +126,47 @@ footer {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
-/* ✅ Responsive Styles for Small Screens */
+
 @media (max-width: 600px) {
-  .container {
-    padding: 25px;
-  }
-
   h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
-  .sub-heading {
-    font-size: 1rem;
+  .course-div {
+    padding: 20px;
+  }
+
+  form {
+    flex-direction: row; 
+    flex-wrap: wrap;    
+    justify-content: center;
+    gap: 10px;
   }
 
   select {
-    width: 100%;
+    width: 45%; 
   }
 
-  input[type="number"] {
+  button {
     width: 100%;
+    font-size: 1rem;
   }
 
-  .btn-calc {
-    width: 100%;
-  }
-
-  .result {
+  #result {
     font-size: 1.1rem;
   }
 
-  .nav-link-back {
+  .nav-link {
     font-size: 1rem;
     padding: 10px 20px;
+  }
+
+  .headder {
+    font-size: 1.3rem;
+    padding: 12px;
+  }
+
+  h2 {
+    font-size: 0.95rem;
   }
 }
