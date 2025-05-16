@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CGPA Calc</title>
+<link rel="stylesheet" href="cgpa.css" />
+<link rel="icon" href="cgpa.png" type="image/png" />
+  <a href="index.html" class="nav-link-back">← Back to GPA Calculator</a>
+  
+
+</head>
+<body>
+  <div class="container">
+    <h1>🎓 CGPA Calculator</h1>
+    <p class="sub-heading">Smiles first, results next! 📘</p>
+
+    <label for="sem-count" class="dropdown-label">Select Number of Semesters:</label>
+    <select id="sem-count" onchange="generateInputs()">
+      <option value="" disabled selected>Select</option>
+      <option value="1">1 Semester</option>
+      <option value="2">2 Semesters</option>
+      <option value="3">3 Semesters</option>
+      <option value="4">4 Semesters</option>
+      <option value="5">5 Semesters</option>
+      <option value="6">6 Semesters</option>
+      <option value="7">7 Semesters</option>
+      <option value="8">8 Semesters</option>
+    </select>
+
+    <form id="gpa-inputs"></form>
+
+    <button onclick="calculateCGPA()" class="btn-calc">✨ Calculate CGPA</button>
+
+    <div id="result" class="result"></div>
+
+    <footer>
+      <p>📌 "Grades fade, learning stays." — Keep learning, always!</p>
+    </footer>
+  </div>
+
+  <script src="cgpa.js"></script>
+</body>
+</html>

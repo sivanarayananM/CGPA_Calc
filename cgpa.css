@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #7b2ff7, #f107a3);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #7b2ff7;
+}
+
+.sub-heading {
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.dropdown-label {
+  font-weight: bold;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #7b2ff7;
+  margin-bottom: 20px;
+  width: 60%;
+  font-size: 1rem;
+}
+
+input[type="number"] {
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+  border: 2px solid #f107a3;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn-calc {
+  background-color: #f107a3;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-calc:hover {
+  background-color: #7b2ff7;
+  transform: scale(1.05);
+}
+
+.result {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  color: #444;
+}
+
+footer {
+  margin-top: 30px;
+  color: #888;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  } to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.nav-link-back {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(45deg, #fc5c7d, #6a82fb);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 8px 15px rgba(108, 130, 251, 0.4);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.nav-link-back:hover {
+  background: linear-gradient(45deg, #6a82fb, #fc5c7d);
+  box-shadow: 0 15px 25px rgba(252, 92, 125, 0.6);
+  transform: translateX(-50%) scale(1.1);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
