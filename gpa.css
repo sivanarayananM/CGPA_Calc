@@ -53,12 +53,11 @@ h2 {
 /* Labels above dropdowns */
 #course-unit,
 #course-grade {
-  display: block;
+  display: inline-block;
   font-size: 1.1rem;
   font-weight: bold;
   color: #1d3557;
-  margin: 10px auto 5px;
-  text-align: center;
+  margin: 10px 15px 5px;
 }
 
 /* Forms and Select Fields */
@@ -174,15 +173,7 @@ button {
   }
 }
 
-#course-unit,
-#course-grade {
-  display: inline-block;
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #1d3557;
-  margin: 10px 15px 5px;
-}
-
+/* Back Navigation Link */
 .nav-link {
   position: fixed;
   bottom: 20px;
@@ -205,4 +196,47 @@ button {
   box-shadow: 0 15px 25px rgba(106, 17, 203, 0.6);
   transform: translateX(-50%) scale(1.1);
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+/* ✅ Responsive Mobile Styles */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .course-div {
+    padding: 20px;
+  }
+
+  form {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  #result {
+    font-size: 1.1rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .headder {
+    font-size: 1.3rem;
+    padding: 12px;
+  }
+
+  h2 {
+    font-size: 0.95rem;
+  }
 }
