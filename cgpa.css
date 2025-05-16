@@ -101,6 +101,7 @@ footer {
     transform: translateY(0);
   }
 }
+
 .nav-link-back {
   position: fixed;
   bottom: 20px;
@@ -123,4 +124,40 @@ footer {
   box-shadow: 0 15px 25px rgba(252, 92, 125, 0.6);
   transform: translateX(-50%) scale(1.1);
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+/* ✅ Responsive Styles for Small Screens */
+@media (max-width: 600px) {
+  .container {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .sub-heading {
+    font-size: 1rem;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  input[type="number"] {
+    width: 100%;
+  }
+
+  .btn-calc {
+    width: 100%;
+  }
+
+  .result {
+    font-size: 1.1rem;
+  }
+
+  .nav-link-back {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
 }
